@@ -2,6 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
 title: "civic-publish-kit: City update rehearsal"
+repository-code: "https://github.com/parallexlabs/civic-publish-kit"
 version: "0.1.0"
 license: Apache-2.0
 authors:
