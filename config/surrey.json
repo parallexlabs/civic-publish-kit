@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "name": "surrey",
+  "title": "City of Surrey development applications in pilot plan areas (public-data reference example)",
+  "allowed_hosts": [
+    "services5.arcgis.com"
+  ],
+  "limits": {
+    "timeout_seconds": 20,
+    "max_retries": 2,
+    "max_records": 20000,
+    "max_response_bytes": 25000000,
+    "max_batch_size": 100
+  },
+  "licence": {
+    "name": "Open Government License – City of Surrey",
+    "url": "https://opendata-surrey.hub.arcgis.com/pages/55089a19491a4fe59a41e059fd8af708",
+    "attribution": "Contains information licensed under the Open Government License – City of Surrey.",
+    "reviewed": true,
+    "review_note": "Reviewed only for this explicitly configured public reference example. Source availability is not itself redistribution permission; this is not City-endorsed software."
+  },
+  "status_map": [
+    {
+      "raw": "Final Approval",
+      "status": "approved",
+      "label": "approved"
+    },
+    {
+      "raw": "Conditional Approval",
+      "status": "conditionally_approved",
+      "label": "conditionally_approved"
+    },
+    {
+      "raw": "Under Review",
+      "status": "unknown",
+      "label": "review"
+    },
+    {
+      "raw": "Initial Review",
+      "status": "unknown",
+      "label": "review"
+    }
+  ],
+  "sources": [
+    {
+      "id": "projects",
+      "kind": "arcgis",
+      "role": "projects",
+      "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Development%20Applications/FeatureServer/0",
+      "where": "STATUS IN ('Conditional Approval','Final Approval','Under Review','Initial Review')",
+      "out_fields": [
+        "PROJECT_NO",
+        "DESCRIPTION",
+        "STATUS"
+      ],
+      "mapping": {
+        "project_id": "PROJECT_NO",
+        "source_record_id": "PROJECT_NO",
+        "title": "DESCRIPTION",
+        "status": "STATUS"
+      }
+    },
+    {
+      "id": "city_centre",
+      "kind": "arcgis",
+      "role": "plan_area",
+      "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/City%20Centre%20Plan/FeatureServer/0",
+      "where": "1=1",
+      "out_fields": []
+    },
+    {
+      "id": "fleetwood",
+      "kind": "arcgis",
+      "role": "plan_area",
+      "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Town%20Centre%20Densities/FeatureServer/0",
+      "where": "AREA_NAME='Fleetwood Town Centre'",
+      "out_fields": [
+        "AREA_NAME"
+      ]
+    },
+    {
+      "id": "campbell_heights",
+      "kind": "arcgis",
+      "role": "plan_area",
+      "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0",
+      "where": "1=1",
+      "out_fields": []
+    },
+    {
+      "id": "south_campbell_heights",
+      "kind": "arcgis",
+      "role": "plan_area",
+      "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/South%20Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0",
+      "where": "1=1",
+      "out_fields": []
+    }
+  ],
+  "pilot_areas": [
+    {
+      "id": "city_centre",
+      "title": "City Centre",
+      "source_ids": [
+        "city_centre"
+      ]
+    },
+    {
+      "id": "fleetwood",
+      "title": "Fleetwood Town Centre",
+      "source_ids": [
+        "fleetwood"
+      ]
+    },
+    {
+      "id": "campbell_heights",
+      "title": "Campbell Heights (including South Campbell Heights)",
+      "source_ids": [
+        "campbell_heights",
+        "south_campbell_heights"
+      ]
+    }
+  ],
+  "area_precedence": [
+    "city_centre",
+    "fleetwood",
+    "campbell_heights"
+  ],
+  "boundary_disclosure": "A project is assigned to a pilot area when its representative point is covered by the union of that area's official public plan polygons. Campbell Heights includes the South Campbell Heights plan. Overlaps are resolved by precedence: city_centre, then fleetwood, then campbell_heights. Plan polygons are official source features published for public planning purposes; this tool does not approximate them or treat them as legal or survey boundaries.",
+  "region_envelope": [
+    -123.1,
+    48.9,
+    -122.3,
+    49.4
+  ],
+  "selection": {
+    "reviewed_project_ids": [
+      "17-0410-00",
+      "17-0422-00",
+      "14-0075-00",
+      "14-0147-00",
+      "14-0213-00"
+    ],
+    "note": "Explicit 5-record public demo selection, captured live 2026-10-06 from the public Development Applications layer for this reference example only. It is not a contractual or City-endorsed selection. All other records are explicitly excluded."
+  },
+  "release": {
+    "include_sites": true
+  },
+  "publishing": {
+    "item_title": "Surrey Development Applications in Pilot Plan Areas (reference candidate)",
+    "summary": "Project points with optional application site polygons and official pilot plan polygons, derived from City of Surrey open data. Public-data reference release; not City-endorsed.",
+    "tags": [
+      "Surrey",
+      "development applications",
+      "open data",
+      "pilot areas",
+      "civic-publish-kit"
+    ]
+  }
+}

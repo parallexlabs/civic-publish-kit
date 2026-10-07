@@ -1,0 +1,7 @@
+# Normal source and documentation: normalize to LF in the repository and on checkout.
+* text=auto eol=lf
+*.sh text eol=lf
+
+# Genuine frozen City responses and fixture inputs are hashed byte-for-byte by capture manifests.
+# Never convert line endings or apply any text filter: store and check out the original bytes exactly.
+tests/fixtures/** -text

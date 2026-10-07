@@ -1,0 +1,52 @@
+{
+  "schema": "civic-publish-kit/rehearsal-config/1",
+  "name": "surrey-development-applications-rehearsal",
+  "layer_url": "https:\u002f\u002fgisservices.surrey.ca\u002farcgis\u002frest\u002fservices\u002fOpenData\u002fMapServer\u002f167",
+  "allowed_hosts": [
+    "gisservices.surrey.ca"
+  ],
+  "where": "1=1",
+  "fields": {
+    "project_id": "PROJECT_NO",
+    "title": "DESCRIPTION",
+    "status": "STATUS"
+  },
+  "native_crs": "EPSG:26910",
+  "target_crs": "EPSG:4326",
+  "page_size": 2000,
+  "limits": {
+    "timeout_seconds": 20,
+    "max_retries": 2,
+    "max_records": 20000,
+    "max_response_bytes": 134217728
+  },
+  "status_map": [
+    {
+      "raw": "Final Approval",
+      "status": "approved"
+    },
+    {
+      "raw": "Conditional Approval",
+      "status": "conditionally_approved"
+    },
+    {
+      "raw": "Under Review",
+      "status": "review_unknown"
+    },
+    {
+      "raw": "Initial Review",
+      "status": "review_unknown"
+    }
+  ],
+  "licence": {
+    "name": "Open Government License \u2013 City of Surrey",
+    "url": "https:\u002f\u002fopendata-surrey.hub.arcgis.com\u002fpages\u002f55089a19491a4fe59a41e059fd8af708",
+    "attribution": "Contains information licensed under the Open Government License \u2013 City of Surrey."
+  },
+  "region_envelope": [
+    -123.1,
+    48.9,
+    -122.3,
+    49.4
+  ]
+}

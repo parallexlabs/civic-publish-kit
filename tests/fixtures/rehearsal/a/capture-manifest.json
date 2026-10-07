@@ -1,0 +1,71 @@
+{
+  "schema": "civic-publish-kit/rehearsal-capture/1",
+  "synthetic": false,
+  "scope": "service_sample",
+  "layer_url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167",
+  "where": "OBJECTID IN (1,2,3)",
+  "captured_at": "2026-10-06T22:52:19.368051+00:00",
+  "retrieved_at": "2026-10-06T23:17:19Z",
+  "description": "Genuine bounded City service sample. The A-to-B query scope change demonstrates explicit removal review; it does not assert a City record deletion. Original native responses preserved; paired WGS84 response captured separately for verification. Request log UTC values are response retrieval times; request-start times were not separately captured.",
+  "complete_service_count": 13880,
+  "requests": [
+    {
+      "file": "metadata.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167?f=json",
+      "retrieved_at": "2026-10-06T22:52:19.368051+00:00",
+      "sha256": "c28bb2ae70341b77b679dee18f1457758fbbe8f14e784f98299d319a9deffd35",
+      "bytes": 5627
+    },
+    {
+      "file": "count.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=json&where=OBJECTID+IN+%281%2C2%2C3%29&returnCountOnly=true",
+      "retrieved_at": "2026-10-06T22:52:19.465084+00:00",
+      "sha256": "0c07187ea6d064441225b3cba26a7b1e8bc702fcf332b457dae8e26892ba68a6",
+      "bytes": 11
+    },
+    {
+      "file": "ids.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=json&where=OBJECTID+IN+%281%2C2%2C3%29&returnIdsOnly=true",
+      "retrieved_at": "2026-10-06T22:52:19.561055+00:00",
+      "sha256": "a33dd3b19e2d20ec7bcd21de8369d68b9390df63927f24a7a71d5b5d7db01fd5",
+      "bytes": 52
+    },
+    {
+      "file": "pages/page-0001.geojson",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=geojson&where=OBJECTID+IN+%281%2C2%2C3%29&outFields=OBJECTID%2CPROJECT_NO%2CDESCRIPTION%2CSTATUS&outSR=26910&orderByFields=OBJECTID+ASC&resultOffset=0&resultRecordCount=2000",
+      "retrieved_at": "2026-10-06T22:52:19.674025+00:00",
+      "sha256": "2a716ded355865de7ee6f899c91024805a45dc3dd0506ea232de5e8ab5600a8a",
+      "bytes": 4828
+    },
+    {
+      "file": "final-count.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=json&where=OBJECTID+IN+%281%2C2%2C3%29&returnCountOnly=true",
+      "retrieved_at": "2026-10-06T22:52:19.720824+00:00",
+      "sha256": "0c07187ea6d064441225b3cba26a7b1e8bc702fcf332b457dae8e26892ba68a6",
+      "bytes": 11
+    },
+    {
+      "file": "final-ids.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=json&where=OBJECTID+IN+%281%2C2%2C3%29&returnIdsOnly=true",
+      "retrieved_at": "2026-10-06T22:52:19.770156+00:00",
+      "sha256": "a33dd3b19e2d20ec7bcd21de8369d68b9390df63927f24a7a71d5b5d7db01fd5",
+      "bytes": 52
+    },
+    {
+      "file": "crs-check/page-0001-epsg4326.geojson",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=geojson&where=OBJECTID+IN+%281%2C2%2C3%29&outFields=OBJECTID%2CPROJECT_NO%2CDESCRIPTION%2CSTATUS&outSR=4326&orderByFields=OBJECTID+ASC&resultOffset=0&resultRecordCount=2000",
+      "retrieved_at": "2026-10-06T23:17:19Z",
+      "sha256": "e948ef16fdfbc95f79e43e1c8a7f67f11b36dd09e124dc52581e73e18c2eedbd",
+      "bytes": 4871
+    }
+  ],
+  "files": {
+    "count.json": "0c07187ea6d064441225b3cba26a7b1e8bc702fcf332b457dae8e26892ba68a6",
+    "crs-check/page-0001-epsg4326.geojson": "e948ef16fdfbc95f79e43e1c8a7f67f11b36dd09e124dc52581e73e18c2eedbd",
+    "final-count.json": "0c07187ea6d064441225b3cba26a7b1e8bc702fcf332b457dae8e26892ba68a6",
+    "final-ids.json": "a33dd3b19e2d20ec7bcd21de8369d68b9390df63927f24a7a71d5b5d7db01fd5",
+    "ids.json": "a33dd3b19e2d20ec7bcd21de8369d68b9390df63927f24a7a71d5b5d7db01fd5",
+    "metadata.json": "c28bb2ae70341b77b679dee18f1457758fbbe8f14e784f98299d319a9deffd35",
+    "pages/page-0001.geojson": "2a716ded355865de7ee6f899c91024805a45dc3dd0506ea232de5e8ab5600a8a"
+  }
+}

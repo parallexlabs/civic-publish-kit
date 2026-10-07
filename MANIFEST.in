@@ -1,0 +1,16 @@
+include README.md LICENSE CITATION.cff MANIFEST.in pyproject.toml uv.lock
+include src/civic_publish_kit/py.typed
+include config/*.json
+recursive-include docs *.md
+recursive-include scripts *.sh
+recursive-include tests *.py
+recursive-include tests/fixtures *.json *.geojson *.csv
+prune _build
+prune _plan
+prune work
+prune reports
+prune releases
+# Exclude hidden workspace metadata directories
+prune .*/
+exclude STATUS*.md BRIEF*.md
+global-exclude *.py[cod] __pycache__

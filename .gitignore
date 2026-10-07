@@ -1,0 +1,48 @@
+# Python bytecode and packaging
+__pycache__/
+*.py[cod]
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Tool caches and coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Local run outputs: raw live responses stay ignored until allowlist/licence checks pass
+work/
+reports/
+releases/
+
+# Local-only workspace, build material and author/review transcripts (never public)
+_build/
+_plan/
+BRIEF*.md
+STATUS*.md
+
+# Local-only build status (must remain untracked)
+STATUS.md
+
+# Local environment files (no credentials are used, but never commit any)
+.env
+.env.*

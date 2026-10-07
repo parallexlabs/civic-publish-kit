@@ -1,0 +1,285 @@
+{
+  "schema": "civic-publish-kit/capture/1",
+  "synthetic": false,
+  "captured_at": "2026-10-06T20:53:17.208460+00:00",
+  "description": "Genuine public City of Surrey responses: five curated project records and two valid official plan features per source. This fixture does not represent the complete live status-filtered project or plan datasets (except complete two-feature Fleetwood filter). Never substitute these samples for failed live reads or treat their limited spatial coverage as authoritative pilot-area membership. Full-source raw captures and invalid geometry evidence were retained locally.",
+  "licence": {
+    "name": "Open Government License \u2013 City of Surrey",
+    "url": "https://opendata-surrey.hub.arcgis.com/pages/55089a19491a4fe59a41e059fd8af708",
+    "attribution": "Contains information licensed under the Open Government License \u2013 City of Surrey.",
+    "reviewed": true,
+    "review_note": "Reviewed only for this explicitly configured public reference example. Source availability is not itself redistribution permission; this is not City-endorsed software."
+  },
+  "sources": {
+    "projects": {
+      "source_url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Development%20Applications/FeatureServer/0",
+      "sample": true,
+      "complete_source_count": 958,
+      "sample_count": 5,
+      "retrieved_at": "2026-10-06T20:18:18.559575+00:00",
+      "capture_where": "OBJECTID IN (39,46,117,123,126)",
+      "requests": [
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Development%20Applications/FeatureServer/0?f=json",
+          "retrieved_at": "2026-10-06T20:02:09.281673+00:00",
+          "sha256": "44aea6ce367c2b8befaf83a6c89c1490941043f26d09c35c35e27cdfa69f3983",
+          "file": "metadata.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Development%20Applications/FeatureServer/0/query?f=geojson&objectIds=39%2C46%2C117%2C123%2C126&outFields=OBJECTID%2CPROJECT_NO%2CDESCRIPTION%2CSTATUS&outSR=4326",
+          "retrieved_at": "2026-10-06T20:18:18.559575+00:00",
+          "sha256": "177abc7216d049a26d04920ade6fd88753856e85413f0775a8f9b05b8aaa2654",
+          "file": "batches/batch-0001.geojson"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Development%20Applications/FeatureServer/0/query?f=json&where=OBJECTID+IN+%2839%2C46%2C117%2C123%2C126%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:34:01.130018+00:00",
+          "sha256": "24e9f6068fe41169abc6f1e5eef3a4a6ff58aa2dc8b9b48feabf966a8bc05cb8",
+          "file": "count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Development%20Applications/FeatureServer/0/query?f=json&where=OBJECTID+IN+%2839%2C46%2C117%2C123%2C126%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:34:01.371084+00:00",
+          "sha256": "2e65bacc5bc23102f9ee9108c80d1edeac0b84c1a2791093ff155c1228eda154",
+          "file": "ids.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Development%20Applications/FeatureServer/0/query?f=json&where=OBJECTID+IN+%2839%2C46%2C117%2C123%2C126%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:34:01.464741+00:00",
+          "sha256": "24e9f6068fe41169abc6f1e5eef3a4a6ff58aa2dc8b9b48feabf966a8bc05cb8",
+          "file": "final-count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Development%20Applications/FeatureServer/0/query?f=json&where=OBJECTID+IN+%2839%2C46%2C117%2C123%2C126%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:34:01.554604+00:00",
+          "sha256": "2e65bacc5bc23102f9ee9108c80d1edeac0b84c1a2791093ff155c1228eda154",
+          "file": "final-ids.json"
+        }
+      ],
+      "files": {
+        "batches/batch-0001.geojson": "177abc7216d049a26d04920ade6fd88753856e85413f0775a8f9b05b8aaa2654",
+        "count.json": "24e9f6068fe41169abc6f1e5eef3a4a6ff58aa2dc8b9b48feabf966a8bc05cb8",
+        "final-count.json": "24e9f6068fe41169abc6f1e5eef3a4a6ff58aa2dc8b9b48feabf966a8bc05cb8",
+        "final-ids.json": "2e65bacc5bc23102f9ee9108c80d1edeac0b84c1a2791093ff155c1228eda154",
+        "ids.json": "2e65bacc5bc23102f9ee9108c80d1edeac0b84c1a2791093ff155c1228eda154",
+        "metadata.json": "44aea6ce367c2b8befaf83a6c89c1490941043f26d09c35c35e27cdfa69f3983"
+      }
+    },
+    "city_centre": {
+      "source_url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/City%20Centre%20Plan/FeatureServer/0",
+      "sample": true,
+      "complete_source_count": 573,
+      "sample_count": 2,
+      "retrieved_at": "2026-10-06T20:02:04.940949+00:00",
+      "capture_where": "OBJECTID IN (1,2)",
+      "requests": [
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/City%20Centre%20Plan/FeatureServer/0?f=json",
+          "retrieved_at": "2026-10-06T20:02:03.871727+00:00",
+          "sha256": "a30372111f44937b794d031b201468cf3f1a6f5eb1334581d130e0aa3484a28d",
+          "file": "metadata.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/City%20Centre%20Plan/FeatureServer/0/query?f=geojson&objectIds=1%2C2&outFields=OBJECTID&outSR=4326",
+          "retrieved_at": "2026-10-06T20:02:04.940949+00:00",
+          "sha256": "a905f3fbc8151b7edff708bccfad90df23066c318ebc3179100eecb3cdbdb63d",
+          "file": "batches/batch-0001.geojson"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/City%20Centre%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:33:57.787444+00:00",
+          "sha256": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+          "file": "count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/City%20Centre%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:33:58.036491+00:00",
+          "sha256": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+          "file": "ids.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/City%20Centre%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:33:58.146134+00:00",
+          "sha256": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+          "file": "final-count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/City%20Centre%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:33:58.247536+00:00",
+          "sha256": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+          "file": "final-ids.json"
+        }
+      ],
+      "files": {
+        "batches/batch-0001.geojson": "a905f3fbc8151b7edff708bccfad90df23066c318ebc3179100eecb3cdbdb63d",
+        "count.json": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+        "final-count.json": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+        "final-ids.json": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+        "ids.json": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+        "metadata.json": "a30372111f44937b794d031b201468cf3f1a6f5eb1334581d130e0aa3484a28d"
+      }
+    },
+    "fleetwood": {
+      "source_url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Town%20Centre%20Densities/FeatureServer/0",
+      "sample": false,
+      "complete_source_count": 2,
+      "sample_count": 2,
+      "retrieved_at": "2026-10-06T20:02:06.453516+00:00",
+      "capture_where": "OBJECTID IN (21,22)",
+      "requests": [
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Town%20Centre%20Densities/FeatureServer/0?f=json",
+          "retrieved_at": "2026-10-06T20:02:05.294039+00:00",
+          "sha256": "bb252cb5c18008f6867c3ec7b2eab72f5d86d17226362ef17a3c8a715bec9df7",
+          "file": "metadata.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Town%20Centre%20Densities/FeatureServer/0/query?f=geojson&objectIds=21%2C22&outFields=OBJECTID&outSR=4326",
+          "retrieved_at": "2026-10-06T20:02:06.453516+00:00",
+          "sha256": "82a3ca99bdfe54ebd1c99da94dbec1fecc912827672c59cef2fda124911d2b23",
+          "file": "batches/batch-0001.geojson"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Town%20Centre%20Densities/FeatureServer/0/query?f=json&where=OBJECTID+IN+%2821%2C22%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:33:58.625589+00:00",
+          "sha256": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+          "file": "count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Town%20Centre%20Densities/FeatureServer/0/query?f=json&where=OBJECTID+IN+%2821%2C22%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:33:58.866847+00:00",
+          "sha256": "d0d7fcf4f14fac24d2f17bce0ca4a150fc019f3ab9328bf02b1ab88c9987858b",
+          "file": "ids.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Town%20Centre%20Densities/FeatureServer/0/query?f=json&where=OBJECTID+IN+%2821%2C22%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:33:58.976465+00:00",
+          "sha256": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+          "file": "final-count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Town%20Centre%20Densities/FeatureServer/0/query?f=json&where=OBJECTID+IN+%2821%2C22%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:33:59.117284+00:00",
+          "sha256": "d0d7fcf4f14fac24d2f17bce0ca4a150fc019f3ab9328bf02b1ab88c9987858b",
+          "file": "final-ids.json"
+        }
+      ],
+      "files": {
+        "batches/batch-0001.geojson": "82a3ca99bdfe54ebd1c99da94dbec1fecc912827672c59cef2fda124911d2b23",
+        "count.json": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+        "final-count.json": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+        "final-ids.json": "d0d7fcf4f14fac24d2f17bce0ca4a150fc019f3ab9328bf02b1ab88c9987858b",
+        "ids.json": "d0d7fcf4f14fac24d2f17bce0ca4a150fc019f3ab9328bf02b1ab88c9987858b",
+        "metadata.json": "bb252cb5c18008f6867c3ec7b2eab72f5d86d17226362ef17a3c8a715bec9df7"
+      }
+    },
+    "campbell_heights": {
+      "source_url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0",
+      "sample": true,
+      "complete_source_count": 210,
+      "sample_count": 2,
+      "retrieved_at": "2026-10-06T20:02:07.830595+00:00",
+      "capture_where": "OBJECTID IN (1,2)",
+      "requests": [
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0?f=json",
+          "retrieved_at": "2026-10-06T20:02:06.914912+00:00",
+          "sha256": "bf182edd8bdb137f892d700ab67bfe2b5bfa91e46a0b464ed16ccdb4cdb1ac90",
+          "file": "metadata.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=geojson&objectIds=1%2C2&outFields=OBJECTID&outSR=4326",
+          "retrieved_at": "2026-10-06T20:02:07.830595+00:00",
+          "sha256": "21cc9a05a4f7a3e4cf6311c43509d13703c20fd96658fafe8905366faf72bf45",
+          "file": "batches/batch-0001.geojson"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:33:59.550768+00:00",
+          "sha256": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+          "file": "count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:33:59.746637+00:00",
+          "sha256": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+          "file": "ids.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:33:59.845450+00:00",
+          "sha256": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+          "file": "final-count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:33:59.946165+00:00",
+          "sha256": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+          "file": "final-ids.json"
+        }
+      ],
+      "files": {
+        "batches/batch-0001.geojson": "21cc9a05a4f7a3e4cf6311c43509d13703c20fd96658fafe8905366faf72bf45",
+        "count.json": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+        "final-count.json": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+        "final-ids.json": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+        "ids.json": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+        "metadata.json": "bf182edd8bdb137f892d700ab67bfe2b5bfa91e46a0b464ed16ccdb4cdb1ac90"
+      }
+    },
+    "south_campbell_heights": {
+      "source_url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/South%20Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0",
+      "sample": true,
+      "complete_source_count": 40,
+      "sample_count": 2,
+      "retrieved_at": "2026-10-06T20:02:09.042050+00:00",
+      "capture_where": "OBJECTID IN (1,2)",
+      "requests": [
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/South%20Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0?f=json",
+          "retrieved_at": "2026-10-06T20:02:08.166831+00:00",
+          "sha256": "ee92074c146bd885ea29b5523cc848eeec8caa65eb29bd739654d197faa2094e",
+          "file": "metadata.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/South%20Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=geojson&objectIds=1%2C2&outFields=OBJECTID&outSR=4326",
+          "retrieved_at": "2026-10-06T20:02:09.042050+00:00",
+          "sha256": "917fe2d331179caf5884c48ab745e465dcb50dfb6f21701c95429f7b48bd2b94",
+          "file": "batches/batch-0001.geojson"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/South%20Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:34:00.336523+00:00",
+          "sha256": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+          "file": "count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/South%20Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:34:00.551223+00:00",
+          "sha256": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+          "file": "ids.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/South%20Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnCountOnly=true",
+          "retrieved_at": "2026-10-06T20:34:00.657712+00:00",
+          "sha256": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+          "file": "final-count.json"
+        },
+        {
+          "url": "https://services5.arcgis.com/YRpe0VKTJytZSSIB/arcgis/rest/services/South%20Campbell%20Heights%20Local%20Area%20Plan/FeatureServer/0/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnIdsOnly=true",
+          "retrieved_at": "2026-10-06T20:34:00.759663+00:00",
+          "sha256": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+          "file": "final-ids.json"
+        }
+      ],
+      "files": {
+        "batches/batch-0001.geojson": "917fe2d331179caf5884c48ab745e465dcb50dfb6f21701c95429f7b48bd2b94",
+        "count.json": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+        "final-count.json": "4880b2437a06ace108b8843ec454b41be1a679813bac9fa47be3f21e3c081e87",
+        "final-ids.json": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+        "ids.json": "271ec9865f2b5f39ad25664d79e15a2054c932af090dae745bc52d6cb1aecaa8",
+        "metadata.json": "ee92074c146bd885ea29b5523cc848eeec8caa65eb29bd739654d197faa2094e"
+      }
+    }
+  }
+}

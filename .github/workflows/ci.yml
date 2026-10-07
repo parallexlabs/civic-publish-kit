@@ -1,0 +1,32 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    env:
+      UV_PYTHON: "3.12"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v6
+      - name: Install locked dependencies
+        run: uv sync --all-extras --frozen
+      - name: Ruff
+        run: uv run --no-sync ruff check .
+      - name: Mypy
+        run: uv run --no-sync mypy
+      - name: Tests (offline, 80% coverage gate)
+        run: uv run --no-sync pytest
+      - name: Build wheel and sdist
+        run: uv run --no-sync python -m build
+      - name: Offline six-command demo
+        run: bash scripts/demo.sh

@@ -1,0 +1,20 @@
+{
+  "service_sample": true,
+  "description": "Paired genuine two-object-ID responses for CRS verification; not a complete service export. Both native and server WGS84 response bytes were reread and matched the original fixture bytes.",
+  "requests": [
+    {
+      "file": "native-26910.geojson",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?objectIds=1%2C2&outFields=OBJECTID%2CPROJECT_NO%2CDESCRIPTION%2CSTATUS&outSR=26910&f=geojson",
+      "retrieved_at": "2026-10-06T23:07:08Z",
+      "sha256": "9d30490732b9f02b907b343837dda0183696fa5212371ded8382a70cddcba5c3",
+      "bytes": 2305
+    },
+    {
+      "file": "server-4326.geojson",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?objectIds=1%2C2&outFields=OBJECTID%2CPROJECT_NO%2CDESCRIPTION%2CSTATUS&outSR=4326&f=geojson",
+      "retrieved_at": "2026-10-06T23:07:08Z",
+      "sha256": "a75252b78442530669166aad5d828d3ab948753dc31f3bf9bd53f6b180fe4645",
+      "bytes": 2286
+    }
+  ]
+}

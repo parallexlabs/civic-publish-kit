@@ -1,0 +1,51 @@
+{
+  "source_url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167",
+  "where": "OBJECTID IN (1,2)",
+  "service_sample": true,
+  "complete_service_count": 13880,
+  "description": "Genuine bounded public query for rehearsal; scope change betweena/b demonstrates removals, not a claim City deleted a project",
+  "requests": [
+    {
+      "file": "metadata.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167?f=json",
+      "retrieved_at": "2026-10-06T22:52:19.802949+00:00",
+      "sha256": "c28bb2ae70341b77b679dee18f1457758fbbe8f14e784f98299d319a9deffd35",
+      "bytes": 5627
+    },
+    {
+      "file": "count.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnCountOnly=true",
+      "retrieved_at": "2026-10-06T22:52:19.857098+00:00",
+      "sha256": "57413ce83ee1d989e384dfd3a82c6e2d9052a23c4204706bd2d7df11aa4c2d7c",
+      "bytes": 11
+    },
+    {
+      "file": "ids.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnIdsOnly=true",
+      "retrieved_at": "2026-10-06T22:52:19.907865+00:00",
+      "sha256": "031745ccd6044513d32e644ea33d2b5f8955f1c8cc5e36bdfc8d7a4d6bc6e31c",
+      "bytes": 50
+    },
+    {
+      "file": "pages/page-0001.geojson",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=geojson&where=OBJECTID+IN+%281%2C2%29&outFields=OBJECTID%2CPROJECT_NO%2CDESCRIPTION%2CSTATUS&outSR=26910&orderByFields=OBJECTID+ASC&resultOffset=0&resultRecordCount=2000",
+      "retrieved_at": "2026-10-06T22:52:20.011536+00:00",
+      "sha256": "9d30490732b9f02b907b343837dda0183696fa5212371ded8382a70cddcba5c3",
+      "bytes": 2305
+    },
+    {
+      "file": "final-count.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnCountOnly=true",
+      "retrieved_at": "2026-10-06T22:52:20.056261+00:00",
+      "sha256": "57413ce83ee1d989e384dfd3a82c6e2d9052a23c4204706bd2d7df11aa4c2d7c",
+      "bytes": 11
+    },
+    {
+      "file": "final-ids.json",
+      "url": "https://gisservices.surrey.ca/arcgis/rest/services/OpenData/MapServer/167/query?f=json&where=OBJECTID+IN+%281%2C2%29&returnIdsOnly=true",
+      "retrieved_at": "2026-10-06T22:52:20.102370+00:00",
+      "sha256": "031745ccd6044513d32e644ea33d2b5f8955f1c8cc5e36bdfc8d7a4d6bc6e31c",
+      "bytes": 50
+    }
+  ]
+}

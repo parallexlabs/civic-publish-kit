@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "civic-publish-kit: City update rehearsal"
+version: "0.1.0"
+license: Apache-2.0
+authors:
+  - name: "ParalleX Labs Inc."
+abstract: >-
+  A public-data rehearsal of a reviewable update cycle for the City of Surrey Development Applications layer:
+  read-only extraction with recorded provenance, EPSG:26910 to WGS84 normalization, plain-language validation
+  reports, immutable local packages with acknowledged diffs, and local rollback. City GIS publishes reviewed files
+  through its own ArcGIS Online; the software makes no remote writes.
+keywords:
+  - open data
+  - provenance
+  - geojson
+  - arcgis
+  - civic
