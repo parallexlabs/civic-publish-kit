@@ -182,7 +182,7 @@ Remove a stale `.lock` only after confirming that no operation is running.
 - **Open tables:** standard CSV and GeoJSON, readable without a map or any vendor tool.
 - **Checkable provenance:** exact query URLs, UTC times and response hashes let anyone recheck a result against
   the public service.
-- **Source licence:** the data is used under the Open Government License – City of Surrey, and the attribution
+- **Source licence:** the data is used under the Open Government License - City of Surrey, and the attribution
   travels with every row.
 
 ## Limitations

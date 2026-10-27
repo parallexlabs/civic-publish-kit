@@ -34,7 +34,7 @@ work/
 reports/
 releases/
 
-# Local-only workspace, build material and author/review transcripts (never public)
+# Local-only workspace and build material (never public)
 _build/
 _plan/
 BRIEF*.md
