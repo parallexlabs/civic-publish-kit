@@ -1,4 +1,4 @@
-"""Regressions for review findings M1 (paired CRS response), M2 (strict CSV) and M3 (source-count integrity).
+"""Regressions for the paired CRS response, strict CSV and source-count integrity.
 
 Successful cases use the genuine bounded fixture A snapshot, including its real paired outSR=4326 response.
 Every mutation is labelled test-only.

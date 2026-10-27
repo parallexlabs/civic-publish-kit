@@ -1,4 +1,4 @@
-"""Package review, immutable recovery and validation regressions for the actual store [12]."""
+"""Package review, immutable recovery and validation regressions for the actual store."""
 
 from __future__ import annotations
 

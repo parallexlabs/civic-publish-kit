@@ -1,4 +1,4 @@
-"""civic-publish: the City update rehearsal CLI with exactly six commands [20].
+"""civic-publish: the City update rehearsal CLI with exactly six commands.
 
 Commands: extract, normalize, validate, diff, package and rollback.
 - Public data only. No credentials, no CMS, no admin UI and no writes to any City ArcGIS Online tenancy.

@@ -1,4 +1,4 @@
-"""Review finding M4 regression: discarded streaming attempts still consume the source budget [17]."""
+"""Regression: discarded streaming attempts still consume the source budget."""
 
 from __future__ import annotations
 

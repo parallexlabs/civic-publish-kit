@@ -1,4 +1,4 @@
-"""Offline rehearsal contracts; genuine capture replay and labelled test-only mutations [18]."""
+"""Offline rehearsal contracts; genuine capture replay and labelled test-only mutations."""
 
 from __future__ import annotations
 

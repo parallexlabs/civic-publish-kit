@@ -1,4 +1,4 @@
-"""Offline reports and all-six-command acceptance, including the full-release semantic regression [18]."""
+"""Offline reports and all-six-command acceptance, including the full-release semantic regression."""
 
 from __future__ import annotations
 

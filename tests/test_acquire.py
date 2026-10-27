@@ -1,4 +1,4 @@
-"""Offline acquisition contracts; saved request-log evidence review [19].
+"""Offline acquisition contracts and saved request-log evidence.
 
 The checked-in Surrey capture is never edited. Temporary mutations, local inputs
 and all HTTP responses constructed here are explicitly test-only.
@@ -77,7 +77,7 @@ def _feature(oid: int) -> Data:
 
 
 class Service:
-    """Independently authored test-only ArcGIS response factory, not a public fixture."""
+    """Test-only ArcGIS response factory, not a public fixture."""
 
     def __init__(self, url: str, count: int = 3, cap: int = 2) -> None:
         self.url = url

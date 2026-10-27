@@ -1,4 +1,4 @@
-"""Genuine A/B regression proof: rollback is recovery, not unacknowledged promotion [14]."""
+"""Genuine A/B regression proof: rollback is recovery, not unacknowledged promotion."""
 
 from __future__ import annotations
 

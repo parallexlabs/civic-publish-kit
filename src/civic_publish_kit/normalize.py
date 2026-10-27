@@ -1,7 +1,7 @@
 """Legacy v1 normalization, blocking validation and release data model.
 
 These pilot-area and local project provenance rules retain v1 behavior. They do not
-define v2 rehearsal normalization or its separate building CSV support. Context: [7].
+define v2 rehearsal normalization or its separate building CSV support.
 
 Contract for legacy store/reports/CLI:
 - normalize_snapshot(snapshot, config) -> ValidationResult. Data problems never raise. An unreadable or

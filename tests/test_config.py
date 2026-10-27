@@ -1,7 +1,6 @@
-"""Configuration contract tests derived from the frozen specification and supplied API.
+"""Configuration contract tests for the civic_publish_kit.config API.
 
-Contract sources: SPEC.md [1] and supplied config.py/config/pyproject [2].
-Revision context and diagnostics: [3].
+Contract sources: src/civic_publish_kit/config.py, config/*.json and pyproject.toml.
 All mutations and mocked responses below are test-only, not public capture fixtures.
 The checked-in Surrey configuration is the baseline; its changing reviewed selection
 and configured batch cap are deliberately not pinned.

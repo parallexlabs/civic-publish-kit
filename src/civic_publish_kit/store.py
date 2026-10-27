@@ -1,4 +1,4 @@
-"""Rehearsal v2 immutable packages, semantic diff and local review pointers [14].
+"""Rehearsal v2 immutable packages, semantic diff and local review pointers.
 
 The six CLI commands are extract, normalize, validate, diff, package and rollback.
 package creates a candidate without changing current.json; package --ack-diff
